@@ -153,6 +153,31 @@ Measured on the development machine (Intel Core i5-12450H, 8 threads, n_ctx=4096
 
 All tools are open source and cited in this report. No proprietary or commercial software is used.
 
+## Screenshots
+
+Place screenshots of the running build in a `screenshots/` folder in the repo and reference them below. Suggested captures:
+
+1. **Chat with RAG sources** — `screenshots/chat.png` — an engineering question with a streamed answer and source badges.
+2. **Calculators** — `screenshots/calculators.png` — the sidebar with the 11 engineering calculators.
+3. **Knowledge base stats** — `screenshots/knowledge.png` — the sidebar showing `Online · Model Loaded` and `104 chunks`.
+4. **Health / metrics** — `screenshots/metrics.png` — the `/api/v1/metrics` response confirming the running backend.
+
+> To use: create `screenshots/`, add your images, then uncomment/insert below.
+>
+> ```
+> ### Chat with RAG sources
+> ![Chat with RAG sources](screenshots/chat.png)
+>
+> ### Calculators
+> ![Calculators](screenshots/calculators.png)
+>
+> ### Knowledge base stats
+> ![Knowledge base stats](screenshots/knowledge.png)
+>
+> ### Health / metrics
+> ![Health / metrics](screenshots/metrics.png)
+> ```
+
 ## Known Gaps
 - CPU-only inference is inherently slow (~1.5-7 tok/s for 3B model); no GPU alternative under ADTC rules
 - No persistent conversation history (in-memory only, lost on restart)
