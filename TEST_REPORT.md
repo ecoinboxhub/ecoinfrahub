@@ -79,6 +79,8 @@ All returned with source badges and no retrieval failures.
 
 ## 7. Deliverables captured
 
+These are kept locally in `screenshots/` (gitignored — not committed to the repo):
+
 - `screenshots/home_loaded.png` — app with model loaded + knowledge ready
 - `screenshots/prompt_typed.png` — competition prompt entered in chat
 - `screenshots/chat_answer.png` — streamed answer with sources and metrics

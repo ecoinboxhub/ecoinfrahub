@@ -42,6 +42,9 @@ model/*.safetensors
 submission.json
 audit.json
 
+# Local screenshots and demo media (kept locally, not committed)
+screenshots/
+
 # Project constitution (maintained separately from committed docs)
 STATUS.md
 

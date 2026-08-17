@@ -155,7 +155,7 @@ All tools are open source and cited in this report. No proprietary or commercial
 
 ## Screenshots
 
-Captured from a real run of the app (fresh clone → install → launch → test) on the development machine.
+Captured from a real run of the app (fresh clone → install → launch → test) on the development machine. The screenshots and video demo are kept locally in `screenshots/` (gitignored — not committed to the repo).
 
 ### Application home (model loaded, knowledge base ready)
 ![Application home](screenshots/home_loaded.png)
@@ -167,7 +167,7 @@ Captured from a real run of the app (fresh clone → install → launch → test
 ![Chat answer with sources](screenshots/chat_answer.png)
 
 ### Video demo
-A 48-second video demo of the full test flow (app launch, prompt entry, streamed answer with sources) is included:
+A 48-second video demo of the full test flow (app launch, prompt entry, streamed answer with sources) is kept locally:
 
 ```text
 screenshots/demo_test.webm
