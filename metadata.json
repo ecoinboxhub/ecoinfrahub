@@ -41,9 +41,8 @@
   },
 
   "_runtime": {
-    "model_path": "model/ecoinframind-ai-model.gguf"
-  },
-
-  "context_length": 4096,
-  "max_tokens": 512
+    "model_path": "model/ecoinframind-ai-model.gguf",
+    "context_length": 4096,
+    "max_tokens": 512
+  }
 }

@@ -66,10 +66,10 @@ Contains competition metadata:
     "packaging": "binary_bundle"
   },
   "_runtime": {
-    "model_path": "model/ecoinframind-ai-model.gguf"
+    "model_path": "model/ecoinframind-ai-model.gguf",
+    "context_length": 4096,
+    "max_tokens": 512
   },
-  "context_length": 4096,
-  "max_tokens": 512,
   "test_prompts": [...]
 }
 ```

@@ -39,10 +39,10 @@
     "packaging": "binary_bundle"
   },
   "_runtime": {
-    "model_path": "model/ecoinframind-ai-model.gguf"
-  },
-  "context_length": 4096,
-  "max_tokens": 512
+    "model_path": "model/ecoinframind-ai-model.gguf",
+    "context_length": 4096,
+    "max_tokens": 512
+  }
 }
 ```
 
@@ -68,5 +68,7 @@
 | `model.parameters_estimate`               | ✅        | `3B`                               | ✅ Valid  | Approximate parameter count                                          |
 | `model.packaging`                         | ✅        | `binary_bundle`                    | ✅ Valid  | Must be `docker_image`, `docker_build_from_repo`, or `binary_bundle` |
 | `_runtime.model_path`                     | ✅        | `model/ecoinframind-ai-model.gguf` | ✅ Valid  | Relative path from repo root to the `.gguf` file                     |
+| `_runtime.context_length`                 | —        | `4096`                             | ✅ Valid  | Kept inside `_runtime` so profiler schema validation passes           |
+| `_runtime.max_tokens`                     | —        | `512`                              | ✅ Valid  | Kept inside `_runtime` so profiler schema validation passes           |
 
 * These values must remain exactly as provided and must not be changed or guessed.
