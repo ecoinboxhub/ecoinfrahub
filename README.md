@@ -44,12 +44,25 @@ Contains competition metadata:
 ```json
 {
   "team_id": "team-ecoinfrahub",
-  "email": "ibrahim5322022@gmail.com",
-  "github_username": "ecoinboxhub",
-  "model_name": "Qwen2.5-3B-Instruct",
-  "model_path": "model/ecoinframind-ai-model.gguf",
-  "runtime": "llama-cpp-python",
-  "quantization": "Q4_K_M",
+  "domain": "Math & Scientific Reasoning",
+  "language_scope": ["en"],
+  "african_alpha_claim": false,
+  "budget_laptop_claim": true,
+  "submitter": {
+    "name": "Ibrahim Ismaila",
+    "email": "ecoinboxhub@gmail.com",
+    "github_handle": "ecoinboxhub"
+  },
+  "model": {
+    "name": "Qwen2.5-3B-Instruct",
+    "runtime": "llama.cpp",
+    "quantization": "GGUF Q4_K_M",
+    "parameters_estimate": "3B",
+    "packaging": "binary_bundle"
+  },
+  "_runtime": {
+    "model_path": "model/ecoinframind-ai-model.gguf"
+  },
   "context_length": 4096,
   "max_tokens": 512,
   "test_prompts": [...]
