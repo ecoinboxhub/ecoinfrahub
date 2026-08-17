@@ -136,6 +136,23 @@ Measured on the development machine (Intel Core i5-12450H, 8 threads, n_ctx=4096
   - 11 API integration tests
 - Integration verified end-to-end: health, streaming chat with RAG, expert modes, calculators, knowledge indexing and retrieval
 
+## Tools Used
+
+| Tool | Purpose | Why chosen |
+|------|---------|-----------|
+| **Qwen2.5-3B-Instruct** (GGUF Q4_K_M) | Foundation LLM | Strong multilingual engineering reasoning at 3B; ~2.1 GB fits the 8 GB RAM budget (Apache 2.0 / MIT-licensed) |
+| **llama.cpp / llama-cpp-python** | CPU inference engine | ADTC-mandated runtime; CPU-only, GGUF support, efficient memory use |
+| **FastAPI** | Backend API | Native async, SSE streaming, Pydantic validation |
+| **ChromaDB** | Vector database | Persistent local SQLite storage with simple API (Apache 2.0) |
+| **sentence-transformers (all-MiniLM-L6-v2)** | Embeddings | Offline, small (90 MB), good retrieval quality |
+| **React 18 + Vite 6** | Web frontend | Low idle RAM (~50 MB) vs Streamlit (~250 MB) |
+| **orjson** | JSON serialization | ~10x faster than stdlib json |
+| **uvicorn** | ASGI server | Async serving of FastAPI + static files |
+| **pytest** | Testing | 86/86 tests pass across all modules |
+| **Git + GitHub** | Version control / submission | Public repo hosting required by ADTC |
+
+All tools are open source and cited in this report. No proprietary or commercial software is used.
+
 ## Known Gaps
 - CPU-only inference is inherently slow (~1.5-7 tok/s for 3B model); no GPU alternative under ADTC rules
 - No persistent conversation history (in-memory only, lost on restart)
