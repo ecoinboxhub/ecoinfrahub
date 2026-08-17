@@ -44,7 +44,7 @@ Contains competition metadata:
 ```json
 {
   "team_id": "team-ecoinfrahub",
-  "domain": "Math & Scientific Reasoning",
+  "domain": "math_scientific_reasoning",
   "language_scope": ["en"],
   "african_alpha_claim": false,
   "budget_laptop_claim": true,
@@ -52,6 +52,11 @@ Contains competition metadata:
     "name": "Ibrahim Ismaila",
     "email": "ecoinboxhub@gmail.com",
     "github_handle": "ecoinboxhub"
+  },
+  "cross_disciplinary_pairing": {
+    "discipline": "civil_engineering",
+    "load_bearing": true,
+    "description": "The model applies mathematical and scientific reasoning to real-world African infrastructure challenges, including civil engineering, transportation, drainage, stormwater, pavement analysis, and related infrastructure problems."
   },
   "model": {
     "name": "Qwen2.5-3B-Instruct",
