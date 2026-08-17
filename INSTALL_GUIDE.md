@@ -75,6 +75,38 @@ curl -X POST http://localhost:8432/api/v1/knowledge/index-all
 
 The sidebar should show **104 chunks**.
 
+## Step 8 — Local testing with the ADTC profiler
+
+The ADTC profiler measures the model locally and produces `submission.json`. Install it from the official repo:
+
+```
+pip install "git+https://github.com/Africa-Deep-Tech-Foundation/adtc-profiler.git"
+```
+
+Two Windows-only prerequisites (already set up on the development machine):
+
+1. **`llama-bench` on PATH** — the profiler calls it internally. On Windows it is not bundled with `pip`; install the official CPU build once:
+   ```
+   # download llama-b10472-bin-win-cpu-x64.zip from
+   # https://github.com/ggml-org/llama.cpp/releases and unzip into:
+   C:\Users\ibrah\AppData\Local\Programs\llama.cpp\bin
+   ```
+   Then add that folder to your **User PATH** (System Properties → Environment Variables).
+
+2. **UTF-8 console output** — the profiler's Rich console crashes on the Windows `cp1252` codec. Set a persistent user variable:
+   ```
+   PYTHONIOENCODING=utf-8
+   ```
+
+Open a **new** terminal (so the variables take effect) and run the official smoke test from the repo root:
+
+```
+bash download_model.sh
+adtc-profiler run --submission . --mode participant --output submission.json --skip-accuracy
+```
+
+A valid run ends with `✓ wrote submission.json` and contains `"measured_on": "participant_laptop"`.
+
 ## Done
 
 Ask engineering questions in the chat (answers stream in with source badges), or use the 11 calculators in the sidebar.
