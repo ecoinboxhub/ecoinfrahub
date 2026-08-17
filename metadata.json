@@ -1,6 +1,6 @@
 {
   "team_id": "team-ecoinfrahub",
-  "domain": "Math & Scientific Reasoning",
+  "domain": "math_scientific_reasoning",
 
   "language_scope": [
     "en"
@@ -16,9 +16,9 @@
   },
 
   "cross_disciplinary_pairing": {
-    "discipline": "Math & Scientific Reasoning for African infrastructure",
+    "discipline": "civil_engineering",
     "load_bearing": true,
-    "description": "The model applies mathematical and scientific reasoning to real-world African infrastructure challenges, including civil engineering, transportation, drainage, stormwater, and related infrastructure analysis."
+    "description": "The model applies mathematical and scientific reasoning to real-world African infrastructure challenges, including civil engineering, transportation, drainage, stormwater, pavement analysis, and related infrastructure problems."
   },
 
   "test_prompts": [
