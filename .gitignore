@@ -1,0 +1,53 @@
+# Frontend dependencies (install via npm install)
+frontend/node_modules/
+frontend/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+venv/
+.env
+.pytest_cache/
+
+# Model files (large, download separately)
+models/*.gguf
+models/huggingface/
+
+# Vector database (auto-created from knowledge/)
+database/
+
+# Sentence transformers cache
+embeddings/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ADTC submission — model weights never committed
+*.gguf
+model/
+model/*.bin
+model/*.safetensors
+
+# Local profiler output
+submission.json
+audit.json
+
+# Project constitution (maintained separately from committed docs)
+STATUS.md
+
+# Runtime logs
+server.log
+server_error.log
+logs/
+*.log
+

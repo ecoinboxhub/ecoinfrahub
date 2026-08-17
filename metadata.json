@@ -1,0 +1,16 @@
+{
+  "team_id": "team-ecoinfrahub",
+  "email": "ibrahim5322022@gmail.com",
+  "github_username": "ecoinboxhub",
+  "model_name": "Qwen2.5-3B-Instruct",
+  "model_path": "model/ecoinframind-ai-model.gguf",
+  "runtime": "llama-cpp-python",
+  "quantization": "Q4_K_M",
+  "domain": "Math & Scientific Reasoning",
+  "context_length": 4096,
+  "max_tokens": 512,
+  "test_prompts": [
+    "What is the standard pavement structure for a rural road in Nigeria according to the Nigerian Highway Manual? Describe the typical layers and their thickness.",
+    "Explain the Rational Method for calculating stormwater runoff. What parameters are needed and how is the peak flow rate determined?"
+  ]
+}
