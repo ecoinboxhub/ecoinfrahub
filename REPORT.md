@@ -155,28 +155,23 @@ All tools are open source and cited in this report. No proprietary or commercial
 
 ## Screenshots
 
-Place screenshots of the running build in a `screenshots/` folder in the repo and reference them below. Suggested captures:
+Captured from a real run of the app (fresh clone → install → launch → test) on the development machine.
 
-1. **Chat with RAG sources** — `screenshots/chat.png` — an engineering question with a streamed answer and source badges.
-2. **Calculators** — `screenshots/calculators.png` — the sidebar with the 11 engineering calculators.
-3. **Knowledge base stats** — `screenshots/knowledge.png` — the sidebar showing `Online · Model Loaded` and `104 chunks`.
-4. **Health / metrics** — `screenshots/metrics.png` — the `/api/v1/metrics` response confirming the running backend.
+### Application home (model loaded, knowledge base ready)
+![Application home](screenshots/home_loaded.png)
 
-> To use: create `screenshots/`, add your images, then uncomment/insert below.
->
-> ```
-> ### Chat with RAG sources
-> ![Chat with RAG sources](screenshots/chat.png)
->
-> ### Calculators
-> ![Calculators](screenshots/calculators.png)
->
-> ### Knowledge base stats
-> ![Knowledge base stats](screenshots/knowledge.png)
->
-> ### Health / metrics
-> ![Health / metrics](screenshots/metrics.png)
-> ```
+### Competition prompt typed in the chat UI
+![Prompt typed](screenshots/prompt_typed.png)
+
+### Answer with source badges and metrics footer
+![Chat answer with sources](screenshots/chat_answer.png)
+
+### Video demo
+A 48-second video demo of the full test flow (app launch, prompt entry, streamed answer with sources) is included:
+
+```text
+screenshots/demo_test.webm
+```
 
 ## Known Gaps
 - CPU-only inference is inherently slow (~1.5-7 tok/s for 3B model); no GPU alternative under ADTC rules
